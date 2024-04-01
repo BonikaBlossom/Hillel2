@@ -103,6 +103,10 @@ console.log(isPowerOfThree(81));
 console.log(isPowerOfThree(126));
 
 
+//ДЗ 4. Складніші цикли
+let 
+
+
 
 //ДЗ 5. Пошук у масиві
 let arr = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
@@ -276,7 +280,17 @@ const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,
 
 
     //ДЗ 8. Рекурсивне зведення в ступінь
-
+    long int pow(long int x, unsigned int n)
+    {
+    if (n==0)
+      return 1;
+      else if (n==1)
+          return x;
+      else if (n % 2 == 0 )
+           return pow( x * x, n/2);
+      else
+           return pow( x * x, n /2)*x;
+    }
 
 
 
@@ -312,4 +326,4 @@ let ladder = {
   }
 };
 
-ladder.up().up().down().showStep();echo "# Hillel2" >> README.md
+ladder.up().up().down().showStep();
