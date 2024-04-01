@@ -261,10 +261,18 @@ const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,
 
     //ДЗ 7. Реалізуйте функцію removeElement
 
-    const array = [1, 2, 3, 4, 5, 6, 7];
-
-    removeElement(array, 7 );
-    console.log(array);
+    let arr = [1,2,3,4,5,6];
+    let element = 5;
+    let removeElement = arr.find(item => item == element);
+    
+    if(removeElement){
+      arr.forEach(function(item, i){
+        if(item == element){
+          arr.splice(i, 1);
+        }
+      });
+    }
+    console.log('result', arr);
 
 
     //ДЗ 8. Рекурсивне зведення в ступінь
@@ -304,4 +312,4 @@ let ladder = {
   }
 };
 
-ladder.up().up().down().showStep();
+ladder.up().up().down().showStep();echo "# Hillel2" >> README.md
